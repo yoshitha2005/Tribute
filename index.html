@@ -1,0 +1,319 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgb(134, 103, 23);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .row1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .leftcolumn1 {
+            margin-top: 80px;
+            margin-left: 20px;
+            width: 30%;
+        }
+
+        .rightcolumn1 {
+            margin-top: 0px;
+            margin-left: 20px;
+            width: 50%;
+            text-align:top;
+            background-color: ;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .leftcolumn2 {
+            margin-top: 180px;
+            margin-left: 10px;
+            width: 65%;
+        }
+
+        .vl {
+            border-left: 20px solid goldenrod;
+            height: 40px;
+        }
+
+        .vl2 {
+            border-left: 2px solid goldenrod;
+            height: 400px;
+            margin-top: 340px;
+        }
+
+        .rightcolumn2 {
+            margin-top: 180px;
+            margin-left: 100px;
+            width: 55%;
+            margin-right: 0px;
+        }
+
+        .rightsub {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .right2sub1 {
+            width: 50%;
+            border-radius: 20px;
+            background-color: ;
+        }
+
+        .right2sub2 {
+            width: 50%;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            background-color: ;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+            border-radius: 50%;
+            box-shadow: 0px 0px 25px 5px rgba(255, 215, 0, 1),
+                0px 0px 50px 10px rgba(139, 69, 19, 0.6);
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+
+        .bg-transparent {
+            background-image: url("https://th.bing.com/th/id/R.89dd464e6c894c2f56344576ff7899ac?rik=2Ljqxx7N7nzczg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fJi2iQA4.jpg&ehk=QITTKrvnMaojc5tk0AB6W5HvN6cb8WUmZ0HxqgvuPp8%3d&risl=&pid=ImgRaw&r=0");
+        }
+
+        /* Media Queries for responsiveness */
+
+        @media screen and (max-width: 480px) {
+            .leftcolumn1,
+            .rightcolumn1 {
+                width: 100%;
+                margin: 100px 0;
+               
+            }
+
+            .leftcolumn1 img {
+                width: 90%;
+                height: auto;
+            }
+
+            .row1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .navbar a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .row2 {
+                flex-direction: column;
+            }
+
+            .leftcolumn2,
+            .rightcolumn2 {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 20px;
+            }
+
+            .vl2 {
+                display: none;
+            }
+
+            .rightsub {
+                flex-direction: column;
+            }
+
+            .right2sub1,
+            .right2sub2 {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .center {
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .leftcolumn1{
+              width: 100%;
+                margin: 1px 0;
+                margin-top:100px;
+               
+            }
+            .rightcolumn1 {
+                width: 100%;
+                margin: 1px 0;
+               
+            }
+          }
+
+            .navbar {
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            .navbar a {
+                margin: 5px;
+            }
+
+            .row1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .leftcolumn2,
+            .rightcolumn2 {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 10px;
+            }
+
+            .vl2 {
+                display: none;
+            }
+
+            .rightsub {
+                flex-direction: column;
+            }
+
+            .right2sub1,
+            .right2sub2 {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .center {
+                width: 80%;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="bg-transparent">
+    <div class="navbar">
+        <h2 style="margin-left: 50px;">Tribute to Draupadi Murmu</h2>
+        <nav style=" margin-right: 20px;font-size: large; ">
+            <a href="#row1" style=" color: white; margin-right: 20px;">Home</a>
+            <a href="#rightcolumn1" style="  color: white;margin-right: 20px;">Biography</a>
+            <a href="#leftcolumn2" style="color: white;margin-right: 20px;">TimeLine</a>
+            <a href="#rightcolumn2" style="color: white; margin-right: 20px;">Achievements</a>
+        </nav>
+    </div>
+
+    <div class="row1" style="text-align: center;" id="row1">
+        <div class="leftcolumn1">
+            <img style="margin-top: 40px;margin-left: 20px; border-radius: 10px;
+            box-shadow: 0px 0px 25px 5px rgba(255, 215, 0, 1), 
+                        0px 0px 50px 10px rgba(139, 69, 19, 0.6);"
+                src="https://img.etimg.com/thumb/width-420,height-315,imgsize-1966995,resizemode-75,msid-97327923/news/india/draupadi-murmu-points-to-climate-change-challenges-indias-g20-presidency/murmu-points-to-climate-change-challenges-indias-g20-presidency.jpg"
+                alt="murmu image" height="120%">
+        </div>
+        <div class="rightcolumn1" id="rightcolumn1">
+            <h2 style="text-align: center; margin-top: 80px;"> Draupadi Murmu, the 15th President of India, is a
+                trailblazing leader and
+                the first tribal woman to hold the nation's highest constitutional office.As President, she continues to
+                inspire millions, embodying the values of humility, perseverance, and service to the nation.
+                <form style="color: red;" action="https://en.wikipedia.org/wiki/Droupadi_Murmu?#"> <input type="submit"
+                        value="Read More">
+                </form>
+            </h2>
+        </div>
+    </div>
+
+    <div class="row2">
+        <div class="leftcolumn2" id="leftcolumn2">
+            <h1 style="text-align: center;">Journey in Time Line</h1>
+            <div class="vl"></div>
+            ⚫ June 20, 1958 – Born in Uparbeda village, Odisha.
+            <div class="vl"></div>
+            ⚫ 1970s – Completed her education at Rama Devi Women's College,Bhubaneswar.
+            <div class="vl"></div>
+            ⚫ 1997 – Became a teacher at Sri Aurobindo Integral Education Centre,Rairangpur.
+            <div class="vl"></div>
+            ⚫ 1997 – Elected as a Councillor in Rairangpur Nagar Panchayat (BJP).
+            <div class="vl"></div>
+            ⚫ 2000-2004 – Served as Minister of State (Odisha Govt).
+            <div class="vl"></div>
+            ⚫ 2002 – Received the Best MLA Award from Odisha Legislative Assembly.
+            <div class="vl"></div>
+            ⚫ 2006-2009 – Became the State President of BJP's ST Morcha in Odisha.
+            <div class="vl"></div>
+            ⚫ 2015-2021 – Appointed as Governor of Jharkhand (first tribal woman to hold this post).
+            <div class="vl"></div>
+            ⚫ 2022 – Elected as 15th President of India
+            <div class="vl"></div>
+        </div>
+        <div class="vl2"></div>
+        <div class="rightcolumn2" id="rightcolumn2">
+            <h1 style="text-align: center;">Key Achievements</h1>
+            <div class="rightsub">
+                <div class="right2sub1">
+                    <h3 style="text-align:center ; ">Political Journey</h3>
+                    <img class="center"
+                        src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1738655322/political_images-modified_yirj3v.png"
+                        alt="joshi image" height="200px" width="50px">
+                    <b style="font-size: 20px;">Draupadi Murmu's political career began in the late 1990s when she joined
+                         the BJP.  Her political journey
+                           is marked by several significant milestones, including becoming a prominent
+                            leader advocating for tribal rights and development.</b>
+                    <form style="display: flex; justify-content: center;"
+                        action="https://docs.google.com/document/d/12HkgAwDoBFqhqGhZbSDev4cuJK6p-_Xl/edit?usp=sharing&ouid=117287910688889527268&rtpof=true&sd=true">
+                        <input type="submit" value="Click for complete Documentation">
+                    </form>
+                </div>
+                <div class="right2sub2">
+                    <h3 style="text-align: center; margin-top: 2px;">Contributions to Tribal Welfare and Education</h3>
+                    <img class="center"
+
+                        src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1738655883/d_child-modified_xefvnh.png"
+                        alt="child welfare" height="200px" width="50px">
+                    <b style="font-size: 20px; ">Draupadi Murmu has been a strong advocate for tribal welfare and education.
+                        During her tenure, she prioritized tribal development, focusing on their socio-economic upliftment.</b>
+                    <form style="display: flex; justify-content: center;"
+                        action="https://docs.google.com/document/d/1nSnB381Kwu0LMw_BtdGvzIsFoE73Y_ZM/edit?usp=sharing">
+                        <input type="submit" value="Click for complete Documentation">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
